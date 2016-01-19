@@ -1,0 +1,12 @@
+;; 2.8
+(load "ex2-7")
+(newline)
+(display "-------------\n")
+(display "define sub-interval")
+(define (sub-interval x y)
+  (make-interval (- (lower-bound x) (upper-bound y))
+                 (- (upper-bound x) (lower-bound y))))
+(newline)
+(display "test (sub-interval a b)")
+(newline)
+(display (sub-interval a b))
